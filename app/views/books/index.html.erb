@@ -1,15 +1,20 @@
-<h1>投稿一覧</h1>
-<h3>Title</h3>
-<h3>Body</h3>
+<h1>Books</h1>
+
+<ul>
+    <li>Title</li>
+    <li>Body</li>
+</ul>
+
 <% @books.each do |book| %>
-
-
-<span><%= link_to 'show', book_path(book.id) %></span>
-<span><%= link_to 'edit' , edit_book_path(book.id) %></span>
-<span><%= link_to 'destroy', book, method: :delete, data: { confirm: '本当に削除しますか？' } %></span>
+<div class= index-main>
+  <span><%= book.title %></span>
+  <span><%= book.body %></span>
+<span><%= link_to 'Show', book_path(book.id) %></span>
+<span><%= link_to 'Edit' , edit_book_path(book.id) %></span>
+<span><%= link_to 'Destroy', destroy_book_path(book.id), method: :DELETE, "data-confirm" => "Are you sure?" %></span>
 <% end %>
 
-<h2>Books</h2>
+</div>
 
 <h3>New book</h3>
 <%= form_with model: @book, url: '/books' do |f| %>
