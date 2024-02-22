@@ -20,17 +20,38 @@
   box-sizing: border-box;
 }
 
+body{
+  
+  padding:20px;
+  
+}
+
 h1{
-  margin:20px 0 0 20px;
+  margin:0px 0 0 10px;
   font-size:20px;
   font-weight: bold;
 }
 
-li{
-  padding:0 100px;
-display:inline-block;
+table{
+  text-align: center;
+}
+
+th{
+  padding : 0 60px;
+}
+
+td{
+  padding : 20px 10px;
 }
 
 .index-main{
-   height: 50vh;
+   height: 50px;
+}
+
+main{
+  padding:20px;
+}
+
+main p{
+  padding:10px 30px 15px;
 }
