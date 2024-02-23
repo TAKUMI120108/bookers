@@ -20,28 +20,32 @@
   box-sizing: border-box;
 }
 
+h1,h3,th,p{
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+
 body{
-  
   padding:20px;
-  
 }
 
 h1{
   margin:0px 0 0 10px;
-  font-size:20px;
-  font-weight: bold;
+  font-size:25px;
+  font-weight:bold;
 }
 
 table{
   text-align: center;
+  margin:20px;
 }
 
 th{
-  padding : 0 60px;
+  padding : 0 50px;
 }
 
 td{
-  padding : 20px 10px;
+  padding : 0 5px;
 }
 
 .index-main{
@@ -49,9 +53,50 @@ td{
 }
 
 main{
-  padding:20px;
+  padding:10px;
 }
 
 main p{
   padding:10px 30px 15px;
+}
+
+p{
+  font-size:13px;
+  padding:10px;
+  margin:5px 10px;
+}
+
+a{
+  font-size:12px;
+  padding:3px;
+  color:black;
+}
+
+span{
+  padding:0px;
+}
+
+.new-book{
+  font-size:13px;
+  margin-top:20px;
+}
+
+.title-book{
+  padding-left:10px;
+}
+
+.body{
+  margin-top:10px;
+}
+
+h3{
+  font-size:25px;
+}
+
+.edit{
+  padding:10px;
+}
+
+.title,.body{
+  font-size:13px;
 }
